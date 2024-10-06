@@ -1,180 +1,245 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width" , initial-scale="1.0">
 	<link rel="stylesheet" type="text/css" href="portfolio.css">
-	<title>Portfolio</title>
+	<title>My portfolio</title>
 	<script src="https://kit.fontawesome.com/c4b421bd74.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
 	<div id="header">
 		<div class="container">
 			<nav>
-				<img src="logo1.jpeg" class="logo">
-				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Services</a></li>
-					<li><a href="#">Portfolio</a></li>
-					<li><a href="#">Contact</a></li>
+				<img src="images/logo.png" class="logo">
+				<ul id="sidemenu">
+					<li><a href="#header">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#services">Services</a></li>
+					<li><a href="#portfolio">Projects</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<i class="fas fa-times" onclick="closemenu()"></i>
 				</ul>
+				<i class="fas fa-bars" onclick="openmenu()"></i>
 			</nav>
 			<div class="header_text">
-				<p>Web Developer</p>
-				<h1>Hey,I am <span>Bhumi</span><br>Goyal from India</h1>
+				<p></p>
+				<h1>Hey,I am <span>Bhumi <br>Goyal</span> from India</h1>
 			</div>
 		</div>
 	</div>
 
-<!-- about -->
+	<!-- about -->
 
-    <div id="about">
-    	<div class="container">
-    		<div class="row">
-    			<div class="row1">
-    				<img src="mansi.jpeg">
-    			</div>
-    			<div class="row2">
-    				<h1 class="sub-title">About Me</h1><br><br>
-    				<p> My name is Bhumi Goyal, and I am a student at MITS Gwalior, pursuing a B.Tech degree. I have a passion for web developement, python , and I am constantly seeking opportunities to expand my knowledge and skills in these areas.<br><br>
-                    During my schooling at Carmel Convent School, I developed a strong foundation in academics and honed my critical thinking and problem-solving abilities. I actively participated in extracurricular activities such as basketball, dancing, acting, which helped me develop teamwork, leadership, and time management skills.</p>
-                    <div class="tab-titles">
-                    	<p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
-                    	<p class="tab-links" onclick="opentab('Experience')">Experience</p>
-                    	<p class="tab-links" onclick="opentab('Education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="Skills">
-                    	<ul>
-                    		<li><span>Web Developer</span><br>Web App Development</li>
-                    		<li><span>Python</span><br>Basic Python Programming</li>
-                    		<li><span>Data Analyst</span><br>Data Analysis with Python</li>
-                    	</ul>
-                    </div>
-                     <div class="tab-contents" id="Experience">
-                    	<ul>
-                    		<li><span>OctaNet</span><br>Web Development internship at OctaNet</li>
-                    		<li><span>Hackerank</span><br>5 Star at Basic Python Programming</li>
-                    		<li><span>Hackerank</span><br>5 Star at Basic Python Programming</li>
-                    </div>
-                     <div class="tab-contents" id="Education">
-                    	<ul>
-                    		<li><span>2017-2019</span><br>CBSE 10th board with 90.2%</li>
-                    		<li><span>2019-2021</span><br>High-School,CBSE 12 board with 88.8%</li>
-                    		<li><span>2021-2015</span><br>Graduate at MITS college</li>
-                    	</ul>
-                    </div>
-    			</div>
-    		</div>
-    	</div>
-    </div>
+	<div id="about">
+		<div class="container">
+			<div class="row">
+				<div class="row1">
+					<img src="images/img3.png">
+				</div>
+				<div class="row2">
+					<h1 class="sub-title">About Me</h1><br><br>
+					<p> I am Bhumi Goyal, a B.Tech student at MITS Gwalior, specializing in Artificial Intelligence and
+						Robotics. With a passion for data science and web development, I have worked on projects like a
+						WhatsApp chat analyzer, Food panda website, and customer churn prediction.<br><br>
+						I’m also the <span>president</span> of the science club, where I lead various innovative
+						initiatives. As a state-level chess player, I have developed strong strategic thinking and
+						problem-solving skills, which I apply in both academics and extracurriculars.</p>
+					<div class="tab-titles">
+						<p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+						<p class="tab-links" onclick="opentab('Experience')">Experience</p>
+						<p class="tab-links" onclick="opentab('Education')">Education</p>
+					</div>
+					<div class="tab-contents active-tab" id="Skills">
+						<ul>
+							<li><span>Web Developer</span><br>Responsive Web Design using HTML, CSS, and JavaScript</li>
+							<li><span>Data Analyst</span><br>Exploratory Data Analysis and Data Visualization with
+								Python</li>
+						</ul>
+					</div>
+					<div class="tab-contents" id="Experience">
+						<ul>
+							<li><span>Optiwise.ai</span><br>SDE internship at Optiwise.ai</li>
+							<li><span>Contechub</span><br>Data analyst intern at Contechub</li>
+							<li><span>OctaNet</span><br>Web Development internship at OctaNet</li>
+					</div>
+					<div class="tab-contents" id="Education">
+						<ul>
+							<li><span>2021-2015</span><br>Graduate at MITS college</li>
+							<li><span>2021</span><br>High-School,CBSE 12 board with 88.8%</li>
+							<li><span>2019</span><br>CBSE 10th board with 90.2%</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-<!-- SERVICES -->
-    <div id="services">
-    	<div class="container">
-    		<h1 class="sub-title">My Services</h1>
-    		<div class="services-list">
-    			<div>
-    				<i class="fa-brands fa-app-store"></i>
-    				<h2>Web Design</h2>
-    				<p>Lorem ipsum dolor sit amet. Et debitis quas aut suscipit rerum At labore laborum sed atque rerum.Qui obcaecati quisquam est distinctio.</p>
-    				<a href="#">Learn More</a>
-    			</div>
-    			<div>
-    				<i class="fa-brands fa-python"></i>
-    				<h2>Python</h2>
-    				<p>Lorem ipsum dolor sit amet. Et debitis quas aut suscipit rerum At labore laborum sed atque rerum. Qui obcaecati quisquam est distinctio.</p>
-    				<a href="#">Learn More</a>
-    			</div>
-    			<div>
-    				<i class="fa-sharp fa-solid fa-magnifying-glass-chart"></i>
-    				<h2>Data analysis</h2>
-    				<p>Lorem ipsum dolor sit amet. Et debitis quas aut suscipit rerum At labore laborum sed atque rerum. Qui obcaecati quisquam est distinctio.</p>
-    				<a href="#">Learn More</a>
-    			</div>
-    	</div>
-    </div>
+	<!-- SERVICES -->
+	<div id="services">
+		<div class="container">
+			<h1 class="sub-title">My Services</h1>
+			<div class="services-list">
+				<div>
+					<i class="fa-brands fa-app-store"></i>
+					<h2>Web Design</h2>
+					<p>Crafting visually appealing and user-friendly websites with a focus on responsive design and
+						seamless user experience. Using modern tools and techniques to bring creative ideas to life on
+						the web.</p>
+					<a href="#">Learn More</a>
+				</div>
+				<div>
+					<i class="fa-solid fa-robot"></i>
+					<h2>Machine Learning</h2>
+					<p>Leveraging machine learning algorithms to build predictive models and intelligent systems.
+						Empowering data-driven decision-making through advanced techniques like classification,
+						regression, and deep learning.</p>
 
-<!-- portfolio -->
-    
-    <div id="portfolio">
-    	<div class="container">
-    		<h1 class="sub-title">My Work</h1>
-    	    <div class="work-list">
-    	      <div class="work">
-    			<img src="https://www.oberlo.com/media/1603956450-image33.jpg?fit=max&fm=webp&w=1824">
-    			  <div class="layer">
-    				<h3>Educational App</h3>
-    				<p>The app connects you to the most talented people</p>
-    				<a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-    		      </div>
-    		  </div>	
-    		  <div class="work">
-    			<img src="https://www.oberlo.com/media/1603956450-image33.jpg?fit=max&fm=webp&w=1824">
-    			  <div class="layer">
-    				<h3>Music App</h3>
-    				<p>The app connects you to the most talented people</p>
-    				<a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-    		  </div>
-    		  </div>
-    		  <div class="work">
-    			<img src="https://www.oberlo.com/media/1603956450-image33.jpg?fit=max&fm=webp&w=1824">
-    			  <div class="layer">
-    				<h3>Social Media App</h3>
-    				<p>The app connects you to the most talented people</p>
-    				<a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-    		  </div>		
-    		  </div>
-    	    </div>
-    	    <a href="#" class="button">See More</a>
-    	</div>
-    </div>
-<!-- contact -->
-     <div id="contact">
-     	<div class="container">
-     		<div class="row">
-     			<div class="contact-left">
-     				<h1 class="sub-title">Contact Me</h1>
-     				<p><i class="fa-solid fa-envelope"></i>contact@gmail.com</p>
-     				<p><i class="fa-solid fa-phone"></i>3648712638</p>
-     				<div class="social">
-     				<a href="https://www.facebook.com/facebook/"><i class="fa-brands fa-facebook"></i></a>
-     				<a href="https://www.instagram.com/instagram/"><i class="fa-brands fa-instagram"></i></a>
-     				<a href="https://www.linkedin.com/linkedin/"><i class="fa-brands fa-linkedin"></i></a>
-     				<a href="https://www.twitter.com/twitter/"><i class="fa-brands fa-twitter-square"></i></a>
-     				<a href="https://www.youtube.com/youtube/"><i class="fa-brands fa-youtube"></i></a>
-     			</div>
-     			<a href="mansi1.jpeg" download class="button btn">Download CV</a>
-     			</div>
-     			<div class="contact-right">
-     				<form>
-     					<input type="text" name="Name" placeholder="Your Name" required>
-     					<input type="email" name="email" placeholder="Your Email" required>
-     					<textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-     					<button type="submit" class="button btn">Submit</button>
-     				</form>
-     			</div>
-     		</div>
-     	</div>
-     	<div class="copyright">
-     		<p>Copyright @ BhumiGoyal<i class="fa-solid fa-heart"></i></p>
-     	</div>
-     </div>
+					<a href="#">Learn More</a>
+				</div>
+				<div>
+					<i class="fa-sharp fa-solid fa-magnifying-glass-chart"></i>
+					<h2>Data analysis</h2>
+					<p>Transforming raw data into actionable insights through powerful data analysis techniques. Utilize
+						modern tools to uncover trends, make informed decisions, and drive success in any domain.</p>
+
+					<a href="#">Learn More</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- portfolio -->
+
+		<div id="portfolio">
+			<div class="container">
+				<h1 class="sub-title">My Projects</h1>
+				<div class="work-list">
+					<div class="work">
+						<img src="images/chat_analyzer1.png">
+						<div class="layer">
+							<h3>WhatsApp-Chat-Analyzer</h3>
+							<p>The app connects you to the most talented people</p>
+							<a href="https://whatsapp-chat-analyzer-bbi6.onrender.com/"><i
+									class="fa-solid fa-up-right-from-square"></i></a>
+						</div>
+					</div>
+
+					<div class="work">
+						<img src="images/ayurmedic.png">
+						<div class="layer">
+							<h3>Ayurmedic</h3>
+							<p>The app connects you to the most talented people</p>
+							<a href="https://ayurmedicpro.vercel.app/"><i
+									class="fa-solid fa-up-right-from-square"></i></a>
+						</div>
+					</div>
+
+					<div class="work">
+						<img src="images/food_panda.png">
+						<div class="layer">
+							<h3>Food Panda Website</h3>
+							<p>The app connects you to the most talented people</p>
+							<a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+						</div>
+					</div>
+				</div>
+				<a href="#" class="button">See More</a>
+			</div>
+		</div>
+		<!-- contact -->
+		<div id="contact">
+			<div class="container">
+				<div class="row">
+					<div class="contact-left">
+						<h1 class="sub-title">Contact Me</h1>
+						<p><i class="fa-solid fa-envelope"></i>goyalbhumi5@gmail.com</p>
+						<p><i class="fa-solid fa-phone"></i>8103817131</p>
+						<div class="social">
+							<a href="https://www.instagram.com/_bhumi.ii?igsh=dzFrdHZjc2lkc3Ax"><i
+									class="fa-brands fa-instagram"></i></a>
+							<a href="https://www.linkedin.com/in/bhumi-goyal-602044238/"><i
+									class="fa-brands fa-linkedin"></i></a>
+							<a href="https://github.com/BhumiGoyal"><i class="fa-brands fa-github"></i></a>
+							<!-- <a href="https://www.twitter.com/twitter/"><i class="fa-brands fa-twitter-square"></i></a> -->
+
+						</div>
+						<a href="images/updated_resume.pdf" download class="button btn">Download CV</a>
+					</div>
+					<div class="contact-right">
+						<form name="submit-to-google-sheet">
+							<input type="text" name="Name" placeholder="Your Name" required>
+							<input type="email" name="email" placeholder="Your Email" required>
+							<textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+							<button type="submit" class="button btn">Submit</button>
+						</form>
+						<span id="msg"></span>
+					</div>
+				</div>
+			</div>
+			<div class="copyright">
+				<p>Copyright @ BhumiGoyal<i class="fa-solid fa-heart"></i></p>
+			</div>
+		</div>
 
 
 
-    <script type="text/javascript">
-    	var tablinks = document.getElementsByClassName('tab-links');
-    	var tabcontents = document.getElementsByClassName('tab-contents');
-    	function opentab(tabname){
-    		for(tablink of tablinks){
-    			tablink.classList.remove("active-link");
-    		}
-    		for(tabcontent of tabcontents){
-    			tabcontent.classList.remove("active-tab");
-    		}
-    		event.currentTarget.classList.add("active-link");
-    		document.getElementById(tabname).classList.add("active-tab");
-    	}
-    	
-    </script>
+		<script type="text/javascript">
+			var tablinks = document.getElementsByClassName('tab-links');
+			var tabcontents = document.getElementsByClassName('tab-contents');
+			function opentab(tabname) {
+				for (tablink of tablinks) {
+					tablink.classList.remove("active-link");
+				}
+				for (tabcontent of tabcontents) {
+					tabcontent.classList.remove("active-tab");
+				}
+				event.currentTarget.classList.add("active-link");
+				document.getElementById(tabname).classList.add("active-tab");
+			}
+
+		</script>
+
+		<script>
+			var sidemenu = document.getElementById("sidemenu");
+			function openmenu() {
+				sidemenu.style.right = "0";
+			}
+			function closemenu() {
+				sidemenu.style.right = "-200px";
+			}
+		</script>
+		<script>
+			const scriptURL = 'https://script.google.com/macros/s/AKfycbxhgAQqtbEIY2HNnDr58CGe5nfvoG7HQ7x50-9Ff94e56qwXwjkmq6IMGFJ1YC-ypMMtA/exec'
+			const form = document.forms['submit-to-google-sheet']
+			const msg = document.getElementById("msg")
+
+			form.addEventListener('submit', e => {
+				e.preventDefault()
+
+				// Show loading message before submission
+				msg.innerHTML = "Sending message..."
+
+				// Fetch API to submit the form data
+				fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+					.then(response => {
+						if (response.ok) { // Success condition
+							msg.innerHTML = "Message Sent Successfully";
+							setTimeout(() => {
+								msg.innerHTML = "";
+							}, 5000);
+							form.reset();
+						} else {
+							msg.innerHTML = "Failed to send message. Please try again.";
+						}
+					})
+					.catch(error => {
+						msg.innerHTML = "Error! " + error.message;
+						console.error('Error!', error);
+					});
+			});
+		</script>
 </body>
+
 </html>
